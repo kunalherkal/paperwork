@@ -3,6 +3,7 @@
 .idea/
 target/
 *.jar
+*.iml
 .DS_Store
 /build/
 gradle-app.setting
