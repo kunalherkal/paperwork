@@ -1,0 +1,10 @@
+.gradle
+!gradle-wrapper.jar
+.idea/
+target/
+*.jar
+.DS_Store
+/build/
+gradle-app.setting
+.gradletasknamecache
+
