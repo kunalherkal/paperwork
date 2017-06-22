@@ -8,4 +8,5 @@ target/
 /build/
 gradle-app.setting
 .gradletasknamecache
+*.docx
 
