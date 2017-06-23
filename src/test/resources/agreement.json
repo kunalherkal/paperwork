@@ -1,0 +1,77 @@
+{
+  "executionDate": "01-01-2017",
+  "executionCity": "Pune",
+  "duration": 11,
+  "startingFrom": "01-02-2017",
+  "deposit": 10000,
+  "rent": 5000,
+  "lockInPeriod": 2,
+  "owners": [
+    {
+      "fullName": "Owner Owner",
+      "age": 25,
+      "gender": "male",
+      "occupation": "service",
+      "phoneNumber": "9087654321",
+      "adhaarCardNumber": "123412341234",
+      "panCardNumber": "123456789",
+      "address": {
+        "line1": "address line 1",
+        "line2": "address line 1",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411028"
+      }
+    }
+  ],
+  "tenants": [
+    {
+      "fullName": "Tenant Tenant",
+      "age": 25,
+      "gender": "famale",
+      "occupation": "business",
+      "phoneNumber": "9087654321",
+      "adhaarCardNumber": "123412341234",
+      "panCardNumber": "123456789",
+      "address": {
+        "line1": "address line 1",
+        "line2": "address line 1",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411028"
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "fullName": "Witness Witness",
+      "age": 25,
+      "gender": "male",
+      "occupation": "witnessing",
+      "phoneNumber": "9087654321",
+      "adhaarCardNumber": "123412341234",
+      "panCardNumber": "123456789",
+      "address": {
+        "line1": "address line 1",
+        "line2": "address line 1",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411028"
+      }
+    }
+  ],
+  "property": {
+    "type": "apartment",
+    "area": 500,
+    "usage": "residential",
+    "buildingName": "Some Niwas",
+    "number": "42",
+    "address": {
+      "line1": "address line 1",
+      "line2": "address line 1",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411028"
+    }
+  }
+}
