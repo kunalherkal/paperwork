@@ -1,7 +1,9 @@
 package com.kunalherkal.paperwork.models;
 
 
+import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTBody;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTPageSz;
@@ -10,6 +12,14 @@ import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTSectPr;
 import java.math.BigInteger;
 
 public class WordDocument {
+
+    protected void addBreak(XWPFDocument document, int times) {
+        XWPFParagraph paragraph = document.createParagraph();
+        paragraph.setAlignment(ParagraphAlignment.CENTER);
+        XWPFRun run = paragraph.createRun();
+        run.setFontSize(12);
+        addBreak(run, times - 1);
+    }
 
     protected void addBreak(XWPFRun run, int times) {
         for (int i = 0; i < times; i++) {

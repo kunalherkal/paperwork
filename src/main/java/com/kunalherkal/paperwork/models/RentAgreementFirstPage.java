@@ -1,6 +1,7 @@
 package com.kunalherkal.paperwork.models;
 
 import com.kunalherkal.paperwork.models.dto.RentAgreement;
+import com.kunalherkal.paperwork.utils.Constants;
 import org.apache.poi.xwpf.usermodel.*;
 
 import java.io.File;
@@ -27,7 +28,7 @@ public class RentAgreementFirstPage extends WordDocument implements Creatable {
         run1.setFontSize(18);
         run1.setUnderline(UnderlinePatterns.SINGLE);
         addBreak(run1, 28);
-        run1.setText("RENT AGREEMENT");
+        run1.setText(Constants.AGREEMENT_NAME);
 
         XWPFParagraph paragraph2 = document.createParagraph();
         paragraph2.setAlignment(ParagraphAlignment.CENTER);
@@ -37,9 +38,9 @@ public class RentAgreementFirstPage extends WordDocument implements Creatable {
         run2.addBreak();
         run2.setText("BETWEEN");
         addBreak(run2, 3);
-        run2.setText("OWNER");
+        run2.setText(Constants.OWNER);
         addTab(run2, 9);
-        run2.setText("TENANT");
+        run2.setText(Constants.TENANT);
 
         String pathname = "firstPage.docx";
         FileOutputStream fileOutputStream = new FileOutputStream(new File(pathname));
